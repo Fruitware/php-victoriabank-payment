@@ -1,5 +1,5 @@
 {
-    "name": "terranetmd/php-victoriabank-payment",
+    "name": "fruitware/php-victoriabank-payment",
     "description": "Victoriabank payment gateway integration",
     "type": "library",
     "keywords": [
