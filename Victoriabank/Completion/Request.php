@@ -2,7 +2,7 @@
 
 namespace Terranet\Payment\Victoriabank;
 
-use Terranet\Payment\Victoriabank;
+use Terranet\Payment\VictoriaClient;
 
 class Completion_Request extends Request{
 
@@ -37,7 +37,7 @@ class Completion_Request extends Request{
         parent::init();
 
         #Set TRX type
-        $this->_requestFields[self::TRTYPE] = Victoriabank::TRX_TYPE_COMPLETION;
+        $this->_requestFields[self::TRTYPE] = VictoriaClient::TRX_TYPE_COMPLETION;
 
         #Set TRX signature
         $order      = $this->_requestFields[self::ORDER];

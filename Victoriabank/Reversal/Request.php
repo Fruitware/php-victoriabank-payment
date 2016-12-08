@@ -2,7 +2,7 @@
 
 namespace Terranet\Payment\Victoriabank;
 
-use Terranet\Payment\Victoriabank;
+use Terranet\Payment\VictoriaClient;
 
 class Reversal_Request extends Request{
 
@@ -38,7 +38,7 @@ class Reversal_Request extends Request{
         parent::init();
 
         #Set TRX type
-        $this->_requestFields[self::TRTYPE] = Victoriabank::TRX_TYPE_REVERSAL;
+        $this->_requestFields[self::TRTYPE] = VictoriaClient::TRX_TYPE_REVERSAL;
 
         #Set TRX signature
         $order      = $this->_requestFields[self::ORDER];
