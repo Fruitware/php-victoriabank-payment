@@ -13,9 +13,7 @@
         "php": ">=5.3.5"
     },
     "autoload": {
-        "psr-4": {
-            "": "src"
-        }
+        "psr-0": { "Terranet\\Payment": "" }
     },
-    "include-path": ["src/"]
+    "target-dir": "Terranet/Payment"
 }

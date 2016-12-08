@@ -4,7 +4,7 @@ namespace Terranet\Payment;
 
 use Terranet\Payment\Victoriabank as VB;
 
-class Victoriabank{
+class VictoriaClient{
 
     const TRX_TYPE_AUTHORIZATION    = 0;
     const TRX_TYPE_COMPLETION       = 21;
